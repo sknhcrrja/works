@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daytry Day5</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--------------------- header menu --------------------->
+  <header>
+    <div class="container clear">
+      <!-- before :div.clearと同等、検証でチェック-->
+      <div class="header-left">
+        <h1 class="header-tittle">30DAYSトライアル</h1>
+      </div>
+      <div class="header-right">
+        <!-- <nav class="header-nav"> -->
+          <ul class="header-nav clear">
+            <li class="header-nav-item"><a href="#">デイトラとは</a></li>
+              <li class="header-nav-item">
+                <a href="#" id="drawer">コース一覧</a>
+                <!-- jQuery -->
+                <ul id="toggle-list">
+                  <li><a href="#">初級</a></li>
+                  <li><a href="#">中級</a></li>
+                  <li><a href="#">上級</a></li>
+                </ul>
+                <!-- </jQuery> -->
+              </li>
+            <li class="header-nav-item"><a href="#">お問い合わせ</a></li>
+          </ul>
+        <!-- </nav> -->
+      </div>
+      <!-- <div class="clear"></div> -->
+      <!-- after :div.clearと同等、検証でチェック-->
+    </div>
+  </header>
+    <!--------------------- サイトTop画像 --------------------->
+  <section class="top">
+    <!-- <img src="img/main-vsual.png" alt="トップ部分の画像です。"> -->
+    <h1 class="top-tittle">1日1題30日で<br>プロのWebエンジニアになろう！</h1>
+    <h2 class="top-sub-tittle">毎日設定された課題をこなすだけ！<br>未経験から30日でプログラミングスキルが身につけよう</h2>
+  </section>
+  <!----------------- about(サイト中央１) ----------------->
+  <section class="about section">
+    <div class="container clear">
+      <h1 class="section-tittle">デイトラとは</h1>
+      <div class="about-left">
+        <img src="./img/about.png" alt="">
+      </div>
+      <div class="about-right">
+        <p>デイトラとは、無料で・迷わず・楽しく学べるプログラミング学習アプリです。 毎日設定された課題をこなしていくだけで、未経験から30日でプログラミングスキルが身につきます。<br>
+          1日1題30日でプロのWebエンジニアを目指しましょう!</p>
+      </div>
+    </div>
+  </section>
+    <!--------------------- サイト中央2 --------------------->
+  <section class="course section">
+    <div class="container">
+      <h1 class="section-tittle">コース一覧</h1>
+      <div class="course-wrapper">
+        <div class="course-item">
+          <img class="course-item-pic modal-pic" src="./img/web_first.png" alt="">
+          <p>HTML / CSS / Bootstrap</p>
+        </div>
+        <div class="course-item">
+          <img class="course-item-pic modal-pic" src="./img/web_second.png" alt="">
+          <p>HTML / CSS / JavaScript / jQuery</p>
+        </div>
+        <div class="course-item">
+          <img class="course-item-pic modal-pic" src="./img/web_third.png" alt="">
+          <p>PHP / WordPress /</p>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <div id="modal">
+      <div id="big-img"><img src="#" alt=""></div>
+    </div><!--/jQuery-->
+  </section>
+  <!--------------- お問い合わせフォーム --------------->
+  <section class="call-to-action section">
+    <div class="container">
+      <h1 class="section-tittle">お問い合わせ</h1>
+        <p class="call-to-action-message">さあ今日から30日間始めよう！</p>
+        <form action="#" method="post">
+          <input type="email" name="email" id="email" placeholder="メールアドレス">
+        </form>
+        <button type="submit" class="btn btn-register">無料ではじめる</button>
+    </div>
+  </section>
+  <!--------------- お問い合わせフォーム --------------->
+  <footer>
+    <div class="container clear">
+      <p class="copy-right">(C) 2020 東京フリーランス ALL Rights Reserved</p>
+    </div>
+  </footer>
+  <!------------------- ページトップに戻るボタン ---------------------->
+  <a href="#" id="top-page" class="btn-top-page">ページトップへ戻る</a>
+
+  <!-- jQueryのライブラリー本体を読み込む -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- 必ずjQuery本体を読み込んだ後にjQueryで書いたファイルを読み込む-->
+  <script src="js/practice.js"></script>
+</body>
+</html>

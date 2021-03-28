@@ -1,0 +1,323 @@
+body {
+  color: #082B48;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: #082B48;
+}
+a:hover {
+  opacity: 0.8;
+}
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/* =====================================
+  section（共通クラス）
+========================================*/
+.section {
+  padding: 60px 0;
+}
+.section-tittle {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* =====================================
+  header
+========================================*/
+header {
+  /* background-color: turquoise; */
+  padding: 20px;
+  /* display: block; */
+}
+.header-tittle {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.header-left {
+  float: left;
+}
+.header-right {
+  float: right;
+}
+.header-nav-item {
+  float: left;
+  margin-left: 50px;
+}
+.header-nav-item a{
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 34px;
+}
+/* =====================================
+Top
+========================================*/
+.top {
+  background-image: url(../img/main-vsual-nontitle.png);
+  background-size: cover;
+  padding: 80px;
+}
+
+.top-tittle {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.top-sub-tittle {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* =====================================
+about
+========================================*/
+.about-left {
+  float: left;
+  width: 48%;
+}
+.about-right {
+  float: right;
+  width: 48%;
+}
+
+/* =====================================
+course
+========================================*/
+.course {
+  background-color:lightcyan;
+}
+.course-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.course-item {
+  width: 30%;
+}
+.course-item p {
+  font-size: 12px;
+}
+/* =====================================
+  call-to-action
+========================================*/
+.call-to-action-message {
+  text-align: center;
+  margin-bottom: 20px;
+}
+form {
+  text-align: center;
+}
+input[type="email"] {
+  width: 600px;
+  border: 3px solid #d8d8d8;
+  font-size: 18px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+.btn {
+  padding: 20px 60px;
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+}
+.btn-register {
+  background-color: #ec6d64;
+  display: block;
+  margin: auto;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* =====================================
+  footer
+========================================*/
+footer {
+  background-color: #082B48;
+  color: #fff;
+  padding: 20px 0;
+}
+.copy-right {
+  font-size: 12px;
+  float: right;
+}
+
+/* =====================================
+  sell-phone
+========================================*/
+@media only screen and (max-width:767px) {
+  .clear::after{
+    clear: none;
+  }
+  /* =====================================
+  section（共通クラス）
+  ========================================*/
+  .section {
+    padding: 40px 0;
+  }
+  .section p {
+    font-size: 14px;
+  }
+  /* =====================================
+    header
+  ========================================*/
+  .header-tittle {
+    text-align: center;
+    padding: 20px;
+  }
+  .header-left {
+    float: none;
+  }
+  .header-right {
+    float: none;
+  }
+  .header-nav-item {
+    float: none;
+    margin: 0;
+  }
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* =====================================
+  Top
+  ========================================*/
+  .top {
+    padding: 60px 0px;
+  }
+  .top-tittle {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+  .top-sub-tittle {
+    font-size: 12px;
+  }
+  /* =====================================
+  about
+  ========================================*/
+  .about-left {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  .about-right {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* =====================================
+  course
+  ========================================*/
+  .course-wrapper {
+    flex-wrap: wrap;
+  }
+  .course-item {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .course-item-pic {
+    padding-bottom: 20px;
+  }
+  .course-item p {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  /* =====================================
+    call-to-action
+  ========================================*/
+  input[type="email"] {
+    width: 100%;
+    font-size: 12px;
+    padding: 10px;
+  }
+  .btn {
+    padding: 10px 30px;
+  }
+  .btn-register {
+    font-size: 20px;
+  }
+  /* =====================================
+    footer
+  ========================================*/
+  .copy-right {
+    font-size: 8px;
+    float: none;
+    text-align: center;
+  }
+}
+/* ======================================
+  jQuery
+========================================*/
+#toggle-list {
+  display: none;
+  font-size: 15px;
+  text-align: center;
+}
+
+.btn-top-page {
+  padding: 20px 60px;
+  color: #fff;
+  font-weight: normal;
+  border: none;
+  border-radius: 4px;
+  background-color:#999;
+  display: none;
+}
+.btn-top-page:hover {
+  background-color: #666;
+  font-weight:bold;
+}
+#top-page {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+
+.modal-pic:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .4);
+  display: none;
+}
+#big-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+}
